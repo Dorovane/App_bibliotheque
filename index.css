@@ -1,0 +1,42 @@
+body{
+    margin:1.5%;
+    font-size: 200%;
+}
+header p{
+    display: inline;
+}
+header div{ 
+    padding-top: 20px;
+}
+.header_p{
+    position: relative;
+    left: 71%;
+}
+.header_span{
+    position: relative;
+   left: 34%;
+}
+header{
+    padding: 1.5%;
+    background-color: gray;
+    height: 100px;
+    margin-bottom: 500px;
+}
+a{
+    text-decoration: none;
+}
+footer{
+    background-color: gray;
+    height: 100px;
+    padding: 1.5%;
+    margin-top: 500px;
+}
+footer div{
+    padding-top: 20px;
+}
+.footer_p{
+    display: inline;
+    position: relative;
+    left: 71%;
+}
+
