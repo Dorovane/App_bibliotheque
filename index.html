@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Page D'acceuil</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Page d'acceuil - Bibliotheque</title>
 </head>
 <body>
 <header>
-    <div>
-        <p ><a href="sign_in.html">Se connecter</a></p>
-        <span class="header_span">Logo</span>
-        <p class="header_p"><a href="sign_up.html">S'inscrire</a></p>
-    </div>
+    <h1>Bienvenu à la biliothèque </h1>
 </header> 
-<p>Petite description ou truc util a mettre sur la page d'acceuil</p>
+<main>
+    <section class="auth-section">
+        <h2>Connexion</h2>
+        <form action="" id="login-form">
+            <label for="email-username">E-mail ou Nom d'utilisateur:</label>
+            <input type="text" id="email-username" required>
+            <label for="password">Votre mot de passe:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Se connecter</button>
+        </form>
+    </section>
+</main>
 <footer>
-    <div>
-        <span>Logo</span>
-        <p class="footer_p">SLOGAN ou un TEXT</p>
-    </div>
+    <p>&copy; 2025 BIibliothèque.  Tous droits réservés</p>
 </footer>
 
 
@@ -41,7 +45,6 @@
 
 
 
-
-<script src="script.Js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
