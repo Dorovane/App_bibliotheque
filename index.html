@@ -4,26 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>Page d'acceuil - Bibliotheque</title>
+    <title>Accueil - Bibliotheque</title>
 </head>
 <body>
-<header>
+
+<!--En-tête de la page-->
+
+<header id="header">
     <h1>Bienvenu à la biliothèque </h1>
+    <nav>
+        <a href="connexion.html">Connexion</a>
+        <a href="inscription.html">Inscription</a>
+    </nav>
 </header> 
+
+<!--Contenu Principal de la page-->
+
 <main>
-    <section class="auth-section">
-        <h2>Connexion</h2>
-        <form action="" id="login-form">
-            <label for="email-username">E-mail ou Nom d'utilisateur:</label>
-            <input type="text" id="email-username" required>
-            <label for="password">Votre mot de passe:</label>
-            <input type="password" id="password" required>
-            <button type="submit">Se connecter</button>
-        </form>
+    <!--Introduction-->
+    <section id="intro">
+        <h2>Bienvenu sur la plateforme de notre bibliothèque</h2>
+        <p>Decouvrez , empruntez et profiter d'un large choix de livre</p>
+    </section>
+    <!--Avantages-->
+    <section id="avantages">
+        <h2>Pourquoi nous choisir</h2>
+        <ul>
+            <li>Catalogue varié</li>
+            <li>Emprutns rapides</li>
+            <li>Recommandations personnalisées</li>
+        </ul>
+    </section>
+    <!--Présentations des rôles-->
+    <section id="roles">
+        <h2>Qui êtes vous ?</h2>
+        <p>Client : Accédez a vos livres préférés </p>
+        <p>Admiistrateur : Gerer les lecteurs / Superviser tout</p>
+    </section>
+    <!--À propos-->
+    <section id="a-propos">
+        <h2>À propos de la bibliothèque</h2>
+        <p>Nous sommes une bibliothèque moderne ouverte a tous </p>
+    </section>
+    <!--Appel a l'action-->
+    <section id="call-to-action">
+        <h2>Prêt a commencer? </h2>
+        <a href="inscription.html">Créer un compte maintenant.</a>
     </section>
 </main>
-<footer>
-    <p>&copy; 2025 BIibliothèque.  Tous droits réservés</p>
+
+<footer id="footer">
+    <p>Contact : bibliothèque@gmail.com</p>
+    <p>&copy; 2025 Bibliothèque - Tous droits réservés</p>
 </footer>
 
 
