@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">Effacer les utilisateurs</button>
+    <div id="success-message" style="color: blue;"></div>
+    <button id="btn2">Effacer les livres</button>
+    <div id="success-message" style="color: blue;"></div>
+    <script>
+        document.getElementById("btn1").addEventListener("click",()=>{
+            localStorage.removeItem("users_signup_infos");
+            document.getElementById("success-message").textContent="Données des utilisateurs supprimées"
+        })
+        document.getElementById("btn2").addEventListener("click",()=>{
+            localStorage.removeItem("livre_disponible");
+            document.getElementById("success-message").textContent="Données des utilisateurs supprimées"
+        })
+
+    </script>
+</body>
+</html>

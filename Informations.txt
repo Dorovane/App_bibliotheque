@@ -1,0 +1,7 @@
+admin_principal=owner
+admin_secondaires=staff
+clients=users
+la clé pour les données des utilisateurs pour le l'inscriptions (staff et users) est users_signup_infos
+pour le owner le nom d'utilisateur de connexion est Kenneth et le mot de passe est Kenneth
+pour un des staffs le nom d'utilisateur est Dorovane et le mdp est Dorovane
+pour un des users le nom d'utilisateur est Michelle et le mdp est Michelle

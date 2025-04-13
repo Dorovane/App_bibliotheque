@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des livres | Bibliotheque</title>
+</head>
+<body>
+    <header>
+        <h1>Gestion des livres</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Tableau de bord</a></li>
+                <li><a href="books_managment.html">Gestion des livres</a></li>
+                <li><a href="users_managment.html">Gestion des utilisateurs</a></li>
+                <li><a href="loan.html">Gestion des emprunts</a></li>
+                <li><a href="setting.html">Paramêtre</a></li>
+                <li><a href="../index.html">Deconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section >
+            <h2>Ajouter un nouveau livre</h2>
+            <form id="add-form">
+                <label for="titre">Titre :</label>
+                <input type="text" id="titre" name="titre" required>
+                <label for="auteur">Auteur :</label>
+                <input type="text" id="auteur" name="auteur" required>
+                <label for="categorie">Catégorie :</label>
+                <input type="text" id="categorie" name="categorie" required>
+                <label for="isbn">ISBN :</label>
+                <input type="text" id="isbn" name="isbn" required>
+                <button type="submit" >Ajouter le livre</button>
+            </form>
+        </section>
+        <div id="message"></div>
+        <section id="liste-livres">
+            <h2>Liste des livres</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Auteur</th>
+                        <th>Catégorie</th>
+                        <th>ISBN</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!--les livres seont ajouter dynamiquement-->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>Contact : bibliothèque@gmail.com</p>
+        <p>&copy; 2025 Bibliothèque - Tous droits réservés</p>
+    </footer>
+</body>
+<script src="../js/auth_owner.js"></script>
+
+<script src="../js/books_managment.js"></script>
+</html>

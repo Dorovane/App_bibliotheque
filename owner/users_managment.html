@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des utilisateurs | Bibliotheque</title>
+</head>
+<body>
+    <header>
+        <h1>Gestion des utilisateurs</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Tableau de bord</a></li>
+                <li><a href="books_managment.html">Gestion des livres</a></li>
+                <li><a href="users_managment.html">Gestion des utilisateurs</a></li>
+                <li><a href="loan.html">Gestion des emprunts</a></li>
+                <li><a href="../index.html">Deconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section >
+            <h2>Ajouter un ouvel utilisateur</h2>
+            <form action="users_managment.html"  id="add-form">
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Adresse Email :</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">Mot de passe :</label>
+                <input type="password" name="password" id="password" required>
+                <label for="password-confirm">Confirmer le mot de passe :</label>
+                <input type="password" name="password-confirm" id="password-confirm" required>
+                <select name="role" id="role">
+                    <option disabled selected>Selectionner le role</option>
+                    <option value="staffs">Bibliothécaire</option>
+                    <option value="users">Clients</option>
+                </select>
+                <button type="submit">Ajouter</button>
+            </form>
+            <div id="message"></div>
+
+        </section>
+ 
+        <section >
+            <h2>Liste des utilisateurs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom d'utilisateur</th>
+                        <th>Adresse Email</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!--les utilisateurs seront ajouter dynamiquement-->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer >
+        <p>Contact : bibliothèque@gmail.com</p>
+        <p>&copy; 2025 Bibliothèque - Tous droits réservés</p>
+    </footer>
+</body>
+
+<script src="../js/auth_owner.js"></script>
+<script src="../js/users_managment.js"></script>
+</html>

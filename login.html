@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="">
     <title>Connexion | Bibliothèque</title>
 </head>
 <body>
@@ -11,20 +11,24 @@
         <h1>Connexion à votre compte</h1>
     </header>
     <main>
-        <section id="login-form">
-            <form action="#" method="post">
-                <label for="username">Entrez votre nom d'utilisateur ou Email : </label>
-                <input type="text" required id="username" name="username">
-                <label for="password">Entrez votre mot de passe : </label>
-                <input type="password" required id="password" name="password">
+        <section>
+            <form action="login.html"  id="login-form">
+                <label for="username">Entrez votre nom d'utilsateur</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Entre votre mot de passe</label>
+                <input type="password" id="password" required name="password">
                 <button type="submit">Se connecter</button>
             </form>
+            <div style="color: red;" id="error-message"></div>
             <p>Pas encore de compte ? <a href="signup.html">Créer un compte</a></p>
         </section>
     </main>
-    <footer id="footer">
+    <footer >
         <p>Contact : bibliothèque@gmail.com</p>
         <p>&copy; 2025 Bibliothèque - Tous droits réservés</p>
     </footer>
+
+
+    <script src="js/login.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="">
     <title>Inscription | Bibliotheque</title>
 </head>
 <body>
@@ -11,8 +11,8 @@
         <h1>Créer un compte</h1>
     </header>
     <main>
-        <section id="signup-form">
-            <form action="#" method="post">
+        <section >
+            <form action="signup.html"  id="signup-form">
                 <label for="username">Nom d'utilisateur :</label>
                 <input type="text" id="username" name="username" required>
                 <label for="email">Adresse Email :</label>
@@ -20,15 +20,20 @@
                 <label for="password">Mot de passe :</label>
                 <input type="password" name="password" id="password" required>
                 <label for="password-confirm">Confirmer le mot de passe :</label>
-                <input type="password-confirm" name="password-confirm" id="password-confirm" required>
+                <input type="password" name="password-confirm" id="password-confirm" required>
                 <button type="submit">S'inscrire</button>
             </form>
+            <div id="message"></div>
             <p>Deja un compte? <a href="login.html">Se connecter</a></p>
         </section>
     </main>
-    <footer id="footer">
+    <footer>
         <p>Contact : bibliothèque@gmail.com</p>
         <p>&copy; 2025 Bibliothèque - Tous droits réservés</p>
     </footer>
+    
+
+
+    <script src="js/signup.js"></script>
 </body>
 </html>
