@@ -1,11 +1,10 @@
 let tbody= document.getElementById("tbody");
 let form=document.getElementById("add-form");
-let books =( JSON.parse(localStorage.getItem(" books ")) || []);
+let books = JSON.parse(localStorage.getItem("books")) || [];
 let books_titre=books.map((livre)=>livre.titre);
 document.addEventListener("DOMContentLoaded",()=>{
     if(localStorage.getItem("books"))
     { 
-        let books=JSON.parse(localStorage.getItem("books"))
         for(let i=0 ; i<books.length;i++){
             const ligne=document.createElement("tr")
             ligne.innerHTML=
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 <td>${books[i].categorie}</td>
                 <td>${books[i].isbn}</td>
                 <td><button onclick="delete_book(${i});">supprimer</button></td>
-                <td><button onclick="modify.book(${i});">Modifier</button></td>
+                <td><button onclick="modify_book(${i});">Modifier</button></td>
             `
             tbody.appendChild(ligne)
         }
